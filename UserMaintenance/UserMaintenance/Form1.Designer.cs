@@ -32,6 +32,7 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnFileWrite = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -54,7 +55,7 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(460, 26);
+            this.txtFullName.Location = new System.Drawing.Point(501, 26);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(249, 26);
             this.txtFullName.TabIndex = 3;
@@ -69,11 +70,22 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnFileWrite
+            // 
+            this.btnFileWrite.Location = new System.Drawing.Point(389, 278);
+            this.btnFileWrite.Name = "btnFileWrite";
+            this.btnFileWrite.Size = new System.Drawing.Size(320, 51);
+            this.btnFileWrite.TabIndex = 6;
+            this.btnFileWrite.Text = "button1";
+            this.btnFileWrite.UseVisualStyleBackColor = true;
+            this.btnFileWrite.Click += new System.EventHandler(this.btnFileWrite_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFileWrite);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.lblFullName);
@@ -91,6 +103,7 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnFileWrite;
     }
 }
 
